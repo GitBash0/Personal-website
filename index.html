@@ -56,7 +56,12 @@
                     <!-- /Text Logo -->
 
                     <!-- Navigation -->
-                    <div class="site-nav mobile-menu-hide">
+                    
+                    <div class="site-nav mobile-menu">
+                        <nav class="navbar navbar-dark bg-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
                         <ul class="leven-classic-menu site-main-menu">
                             <li class="menu-item ">
                                 <a href="#about">About Me</a>
@@ -76,10 +81,12 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </nav>
 
                     <!-- Mobile Menu Toggle -->
-                    <a class="menu-toggle mobile-visible">
-              <i class="fa fa-bars"></i>
             </a>
                     <!-- Mobile Menu Toggle -->
                 </div>
@@ -408,35 +415,10 @@
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src='js/jquery.shuffle.min.js'></script>
-    <script src='js/masonry.pkgd.min.js'></script>
-    <script src='js/owl.carousel.min.js'></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-    <script src="js/jquery.googlemap.js"></script>
-    <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6f1f82292d9b3218","version":"2021.12.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}'
         crossorigin="anonymous"></script>
-        <script>
-            $("#submit-form").submit((e)=>{
-                e.preventDefault()
-                $.ajax({
-                    url:"https://script.google.com/macros/s/AKfycbxPpj6XwlsGAYRwloLcjG2sO3B7X-FF6y0AtMRb/exec",
-                data:$("#submit-form").serialize(),
-                    method:"post",
-                    success:function (response){
-                        alert("Form submitted successfully")
-                        window.location.reload()
-                        //window.location.href="https://google.com"
-                    },
-                    error:function (err){
-                        alert("Something Error")
-        
-                    }
-                })
-            })
-        </script>
 
 </body>
 

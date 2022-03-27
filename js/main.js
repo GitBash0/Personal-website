@@ -233,4 +233,21 @@
             }
         }), r("head").append('<style data-styles="leven-theme-skills-css" type="text/css">' + t + "</style>")
     })
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbxPpj6XwlsGAYRwloLcjG2sO3B7X-FF6y0AtMRb/exec",
+        data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
 }(jQuery);
