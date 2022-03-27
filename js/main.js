@@ -236,7 +236,7 @@
     $("#submit-form").submit((e)=>{
         e.preventDefault()
         $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbxPpj6XwlsGAYRwloLcjG2sO3B7X-FF6y0AtMRb/exec",
+            url:"https://script.google.com/macros/s/AKfycbw94eGNwLAmEmlUb80LlvrgXtf1c64o5302eIDy/exec",
         data:$("#submit-form").serialize(),
             method:"post",
             success:function (response){
